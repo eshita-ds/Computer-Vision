@@ -1,6 +1,6 @@
 <h1 align=center>Object Detection and Inference using Yolo and Detectron</h1>
 
-<p align=center><img width="849" alt="image" src="https://github.com/user-attachments/assets/fc1d114c-3f35-4ba4-bb64-51f7163d64c5" /></p>
+<p align=center><img width="840" alt="image" src="https://github.com/user-attachments/assets/7d955f22-defb-4f95-a2b0-760086b0d751" /></p>
 
 
 This repository demonstrates the process of object detection using the YOLOv8 model(You Only Look Once, Version 8) leveraging Ultralytics' tools and Detectron2, for training, validation, and inference. The primary objective of this project was to train a YOLOv8 model and Detectron2 to recognize tools such as hammers, pliers, ropes, screwdrivers, toolboxes, and wrenches.
@@ -114,12 +114,14 @@ trainer.train()
 
 |Validation batch results|Inferencing on Test set|
 |---|---|
-|<img width="432" alt="image" src="https://github.com/user-attachments/assets/1d59a326-7611-45c0-a73b-8897d5533940" />|<img width="320" alt="image" src="https://github.com/user-attachments/assets/586fdf45-2a3c-4dd8-9a2b-73cce667dbab" />| 
+|<img width="432" alt="image" src="https://github.com/user-attachments/assets/dd17b2d7-8575-463a-9a40-7378515939c3" />|<img width="373" alt="image" src="https://github.com/user-attachments/assets/81c6f78d-60b3-46ae-baa3-03894268e890" />| 
+
+
 
 ## Detectron2
 - **Metrics**: Evaluate precision, recall, and mean average precision (mAP).
 - **Visualization**: Display annotated training datasets and inference results.
-- <img width="361" alt="image" src="https://github.com/user-attachments/assets/2464277f-1696-4ac5-8e3d-bc180fda6462" />
+- <img width="579" alt="image" src="https://github.com/user-attachments/assets/de67b0bc-82c8-457e-9921-98b161c2f078" />
 
 ---
 
