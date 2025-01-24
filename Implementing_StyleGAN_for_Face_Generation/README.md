@@ -16,7 +16,8 @@ This project implements StyleGAN, NVIDIA's groundbreaking architecture for gener
 
 [Dataset link](https://github.com/eshita-ds/Deep-Learning-Projects/tree/main/Implementing_StyleGAN_for_Face_Generation/STYLEGAN)
 
-<img width="443" alt="image" src="https://github.com/user-attachments/assets/9233d610-68d9-4732-90ae-962b3c42474c" />
+![image](https://github.com/user-attachments/assets/f6520bc9-0f6f-45de-b5e0-a58c6a32c85a)
+
 
 
 ## Requirements
@@ -51,26 +52,31 @@ This project implements StyleGAN, NVIDIA's groundbreaking architecture for gener
     - Generator Loss: Fool the discriminator into classifying fake images as real.
     - Discriminator Loss: Differentiate between real and fake images while enforcing the Lipschitz constraint with a gradient penalty.
   - Tracks losses for both generator and discriminator.
-    <img width="275" alt="image" src="https://github.com/user-attachments/assets/04667c0d-0a98-4ea4-81f9-6f3db1324d8a" />
+    
+   ![image](https://github.com/user-attachments/assets/568260aa-9b24-4b92-94b2-aa8ba5907a77)
+
 
 
   ### Evaluation
   
   - FID Score: Evaluates image quality by comparing distributions of real and generated images.
 
-  <img width="591" alt="image" src="https://github.com/user-attachments/assets/76e5cac1-20cb-447d-a84f-e256d3da4bc5" />
+ ![image](https://github.com/user-attachments/assets/7da770bd-25a0-494b-ba60-fd1c4b52809c)
+
     
   - PPL: Assesses the smoothness of latent space by measuring perceptual similarity between interpolated images.
 
   ### Results and Testing
   
   - Final FID Score: 382.7496337890625at step 5 with 45 epochs after tuning hyperparameters.
-  - <img width="317" alt="image" src="https://github.com/user-attachments/assets/1ac91cc9-d0dd-4494-be5a-bfb0c594c428" />
+  - ![image](https://github.com/user-attachments/assets/4717db4a-2dc2-46d8-b0c6-cc5857bd980a)
+
   - PPL evaluated across different batch sizes to ensure smooth latent space.
   - Saved models tested on unseen data to validate performance.
     
-  <img width="257" alt="image" src="https://github.com/user-attachments/assets/a30f764d-7bb0-4324-8c3e-f4626eafb163" />
-  <img width="250" alt="image" src="https://github.com/user-attachments/assets/6c72fcf9-2f2b-4cb3-9a2c-a31dfb09b0d6" />
+  ![image](https://github.com/user-attachments/assets/4b4d0811-1593-40d2-be91-290671b38230)
+
+  ![image](https://github.com/user-attachments/assets/cf32ade9-7e51-41f3-aff0-c1f608fe3a78)
 
   ### Model Saving and Outputs
   - Models, configurations, and metrics are saved for reproducibility.
