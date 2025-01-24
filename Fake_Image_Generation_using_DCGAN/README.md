@@ -1,1 +1,1 @@
-# Deep-Learning-Projects
+# Fake Image Generation using DCGAN
