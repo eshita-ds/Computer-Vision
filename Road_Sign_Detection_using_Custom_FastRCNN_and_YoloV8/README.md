@@ -1,6 +1,6 @@
 <h1 align=center>Road Sign detection using Custom FastRCNN and Yolo V8</h1>
 
-<p align=center><img width="650" alt="image" src="https://github.com/user-attachments/assets/2292e781-6c00-475d-844d-50770ba57e68" /></p>
+<p align=center><img width="650" alt="image" src="https://github.com/user-attachments/assets/00125c44-7e6e-4dda-981a-d6133686de10" /></p>
 
 
 ## Introduction
@@ -27,9 +27,7 @@ From “data.yaml” we extracted the unique classes with their names. The uniqu
 
 **Sample Images:**
 
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/5fa25535-db19-4579-b4ee-4863e2fff12e" />
-<img width="715" alt="image" src="https://github.com/user-attachments/assets/b8aa0dfb-7b62-4723-9d82-5af0ecc8dd5c" />
-
+<img width="757" alt="image" src="https://github.com/user-attachments/assets/6a60ab6b-12ce-4bf0-ab07-9ff3fd7dc9c6" />
 
 
 ## Data Pre-processing
@@ -59,7 +57,7 @@ We implemented a Fast-RCNN model with Residual Blocks from scratch. The architec
 
 Residual Blocks in the backbone CNN improve object detection by adding shortcut connections, enabling gradients to flow efficiently and addressing the vanishing gradient problem. This accelerates convergence and reduces training time. A strong backbone with residual blocks enhances feature extraction, capturing detailed and abstract features for identifying objects in complex backgrounds.
 
-<img width="731" alt="image" src="https://github.com/user-attachments/assets/263b5932-bc0e-47e8-bea5-cfc2fd59179b" />
+<img width="731" alt="image" src="https://github.com/user-attachments/assets/8104e1e5-ad78-485c-b490-896bf9f4ebf7" />
 
 The graphs above show the Training and Validation Loss (left) and Accuracy (right) over 100 epochs for the object detection model. Losses decreased sharply early on and plateaued, indicating the model generalized well with the current architecture. Accuracy steadily rose and stabilized around 81–82%, suggesting the model reached its learning capacity.
 
@@ -77,14 +75,15 @@ While the model performed stably, further improvements may require architectural
  
 | Baseline Pass | Final Pass |
 | --- | --- |
-|<img width="400" alt="image" src="https://github.com/user-attachments/assets/17df8b28-2b5a-449b-b2e3-57d5c5fd5efb" />|<img width="400" alt="image" src="https://github.com/user-attachments/assets/e59093ba-9585-4f48-955f-dcdabe46216f" />|
-
+|<img width="400" alt="image" src="https://github.com/user-attachments/assets/3d5deb6e-42f2-4146-9c7c-df9daf1fd19d" />|<img width="400" alt="image" src="https://github.com/user-attachments/assets/1434b2ce-ee67-4f35-9c2f-3296a7ef3a7e" />|
 
 
 ## Conclusion
 
 ### Custom Fast-RCNN
-<img width="361" alt="image" src="https://github.com/user-attachments/assets/5be6ec58-ce12-4a48-9d4f-cd82ffa6b774" />
+
+<img width="547" alt="image" src="https://github.com/user-attachments/assets/f0085cf0-ae48-4ecf-8ded-650af02a3f46" />
+
 
 The custom Fast RCNN model achieved a test accuracy of 55.18%, showing moderate competence in recognizing road signs but significant room for improvement. High-performing classes like “Attention Please” and “Uneven Road” achieved precision and recall above 0.85, while low-performing classes like “Speed limit” and “Crosswalk” had precision and recall below 0.30.
 
@@ -93,7 +92,7 @@ The macro F1-score of 0.59 and weighted F1-score of 0.55 highlight class imbalan
 ### Yolo V8
 The final YOLOv8n model, optimized in Pass 3, demonstrated the best performance for road sign detection, striking a balance between F1 score and recall. The IoU for the test set was 0.8759, indicating the model’s strong ability to predict bounding boxes accurately. Incorporating data augmentations, weight decay, higher epochs, and other hyperparameters significantly improved performance, achieving a class accuracy of 95.79% and an F1 score of 0.9572. False positives were reduced by 36.4% compared to the baseline, while recall remained high at 0.9824, and precision reached 0.9333. Despite minor trade-offs in IoU and confidence scores, the configuration proved robust and reliable for road sign detection. These model weights were used for predictions on the test dataset for the Kaggle competition.
 
-<img width="382" alt="image" src="https://github.com/user-attachments/assets/ce7898dc-b3d6-4a11-8dce-df1e82ef91e1" />
+<img width="226" alt="image" src="https://github.com/user-attachments/assets/fcb94b9f-d5eb-42c9-a8e3-275909737304" />
 
 ## License
 MIT License
