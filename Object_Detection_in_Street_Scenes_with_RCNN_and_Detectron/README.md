@@ -1,6 +1,6 @@
 # Object Detection in Street Scenes Video with Faster R-CNN and Detectron
 
-<img width="857" alt="image" src="https://github.com/user-attachments/assets/33dacb34-937e-45cd-8438-98fa948f465b" />
+<img width="857" alt="image" src="https://github.com/user-attachments/assets/b5abf8c5-56c0-474a-9f0b-ef93fcac6c7b" />
 
 
 This repository provides code and instructions to evaluate object detection for detecting vehicles in a **short street scene video** using two pre-trained models: Torchvision’s Faster R-CNN and Facebook AI’s Detectron2. The workflow includes using pre-extracted frames from videos to generate object-detected outputs (identify (classify) and draw bounding boxes) and creating new annotated videos based on the predictions.
@@ -93,7 +93,7 @@ For both models, the results will include:
   
 |LA_Street_Output_from_Fast R-CNN_TorchVision|LA_Street_Output_from_Detectron2|
 |---|---|
-|<img width="417" alt="image" src="https://github.com/user-attachments/assets/b1da9c29-cea9-4ae8-bf9d-f8c4729b0bb0" />|<img width="417" alt="image" src="https://github.com/user-attachments/assets/a02dd430-5b5d-4d60-a466-fdbc3ae5e136" />| 
+|<img width="1092" alt="image" src="https://github.com/user-attachments/assets/44021e3c-b38b-4ed0-8994-c3e071010021" />|<img width="1244" alt="image" src="https://github.com/user-attachments/assets/6e288445-2cdd-40fc-a4af-83e60fe4bef9" />| 
 
 ## Notes
 - **Detectron2 Configuration:** By default, Detectron2 expects a GPU for processing. If unavailable, set `cfg.MODEL.DEVICE` to `'cpu'`.
